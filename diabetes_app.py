@@ -2,6 +2,8 @@
 import streamlit as st
 import pickle
 import numpy as np
+from sklearn.preprocessing import StandardScaler
+from sklearn.tree import DecisionTreeClassifier
 
 # Load the trained model and scaler
 with open('diabetes_model.pkl', 'rb') as model_file:
